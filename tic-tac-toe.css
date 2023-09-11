@@ -1,0 +1,120 @@
+div {
+  font-family: Arial;
+}
+
+.outside-box {
+  background-color: rgb(42, 42, 42);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-box {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 700px;
+  width: 900px;
+  row-gap: 70px;
+  column-gap: 70px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.css-sign-box {
+  background-color: rgb(42, 42, 42);
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: box-shadow 0.15s;
+  width: 253px;
+  height: 186.9px;
+}
+
+.css-sign-box:hover {
+  box-shadow: inset 0 0 100px rgba(211, 207, 207, 0.5);
+}
+
+.css-sign-box:active {
+  box-shadow: inset 0 0 100px rgba(211, 207, 207, 0.9);
+}
+
+.css-image {
+  width: 100%;
+  height: 100%;
+}
+
+.css-choose-who-goes-first {
+  background-color: rgb(42, 42, 42);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.css-choose-one-x,
+.css-choose-one-o {
+  color: white;
+  border: none;
+  height: 200px;
+  width: 300px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  border-radius: 16px;
+}
+
+.css-choose-one-x {
+  background-color: rgb(255, 96, 96);
+  margin-left: 500px;
+}
+
+.css-choose-one-o {
+  background-color: rgb(46, 153, 253);
+  margin-right: 500px;
+}
+
+.css-choose-one-x:hover,
+.css-choose-one-o:hover {
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.6);
+}
+
+.css-choose-one-x:active,
+.css-choose-one-o:active {
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 1);
+}
+
+.css-restart {
+  position: absolute;
+  color: white;
+  bottom: 33px;
+  background-color: rgb(255, 60, 60);
+  width: 170px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.css-restart:hover {
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.css-restart:active {
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.7);
+}
